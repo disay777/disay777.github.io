@@ -1,0 +1,260 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0px;
+  vertical-align: auto;
+ 
+}
+
+.bg {
+  display: block;
+  background:url(/img/bg1.png) no-repeat,url(/img/BG_black.png) repeat-y;
+  margin: 0 auto ;
+  padding-top: 64px;
+  border-radius: 5px;
+  width:1920px;
+  box-shadow: 0 0 35px -15px #00000090;
+  
+}
+html {
+  background-color: #354147;
+}
+main {
+  height: 3950px;
+}
+.header { 
+  display: flex;
+  justify-content: space-between;
+  margin: 0 80px 0 80px;
+}
+.logo {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+
+}
+.account {
+  position: relative;
+  
+}
+
+.account::before {
+  content: "";
+  position: absolute;
+  background-image: url(/img/cart.png);
+  left: -32px;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+  
+}
+
+
+.nav a:not(:first-child) {
+  margin-left:40px;
+}
+.title {
+  position: relative;
+  margin:198px auto 0;
+  width: 950px;
+}
+.title h1{
+  color:#fff;
+  font-family: Chronicle Display;
+  font-size: 88px;
+  font-weight: 600;
+  line-height: 100px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 32px 0 32px 0;
+}
+.line {
+  color: #FBD784;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+  letter-spacing: 6px;
+  text-align: left;
+  position: relative;
+  margin-left: 104px;
+}
+.line:before {
+  position: absolute;
+  content: "";
+  color:#FBD784;
+  width: 72px;
+  height: 2px;
+  left: -104px;
+  top: 10px;
+  background: #FBD784;
+}
+.title a{
+  position: relative;
+}
+.scroll:after { 
+  position: absolute;
+  content: "";
+  background: url(/img/arrow_downward_24px.png);
+  left:110px;
+  width: 16px;
+  height: 24px;
+ 
+}
+.navbar {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 183px;
+  color:#fff;
+  top: 145px;
+  left: -485px;
+  transform:rotate(90deg);
+  
+}
+.navbar a{
+  transform: rotate(-90deg);
+}
+.navbar p {
+  margin-right: 12px;
+  line-height: 26px;
+}
+.content {
+margin: 843px auto 0;
+width: 1462px;
+
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+   
+}
+.card_text, .card_img {
+  display: block;
+  
+}
+.card_text :not(:first-child)  {
+  margin-top: 27px;
+  color:#fff;
+  
+}
+.card_text h2 {
+  font-family: Chronicle Display;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 77px;
+  letter-spacing: 0.05em;
+  
+
+}
+.card_text {
+  width: 632px; 
+  margin:141px 114px 140px 150px;
+  position: relative;
+}
+.read_more {
+  color: #FBD784;
+  position: relative;
+}
+.read_more:after {
+  position: absolute;
+  content: "";
+  background: url(/img/arrow_downward_24px2.png)  ;
+  left:110px;
+  top:5px;
+  width: 24px;
+  height: 16px;
+}
+.card:not(:first-child) {
+  margin-top: 200px;
+}
+.card:nth-child(2n) .card_text {
+   order:1;
+   margin-right: 0;
+   margin-left: 264px;  
+}
+.num {
+  position: absolute;
+  left:-150px;
+  top:-110px;
+}
+.footer {
+  width: 1462px;
+  height: 407px;
+  margin: 0 auto ;
+  display: flex;
+  
+
+
+}
+.first {
+  width: 896px;
+ 
+}
+.first,.second,.third {
+  display: block;
+}
+.second_third:first-child {
+  color: red;
+}
+.second_third {
+  display: flex;
+  justify-content: space-between;
+  width: 566px; 
+}
+.third a:not(:first-child) {
+display: block;
+margin-top: 16px;
+}
+.second a:not(:first-child) {
+  display: block;
+  margin-top: 16px;
+  font-family: "gilroy";
+  font-style: medium;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  
+}
+.second a, .third a{
+  font-family: "gilroy";
+  font-style: medium;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+}
+.second p, .third p{
+  Font-family: Gilroy;
+  Font-style: Bold;
+  Font-size: 24px;
+  Line-height: 32px;
+  color:#FBD784;
+}
+.first p:nth-child(2){
+  margin:30px 0 115px 0;
+  width: 303px;
+  color:#fff;
+  font-family: "gilroy";
+  font-style: bold;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+}
+.first p:nth-child(3){
+  font-family: "gilroy";
+  font-style: medium;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  opacity:40%;
+  color:#fff;
+}
