@@ -12,7 +12,10 @@
   vertical-align: auto;
  
 }
-
+@font-face {
+	font-family: 'Chronicle Display'; 
+	src: url(/fonts/Chronicle-Display.otf); }
+  
 .bg {
   display: block;
   background:url(/img/bg1.png) no-repeat,url(/img/BG_black.png) repeat-y;
